@@ -4,7 +4,7 @@
   <groupId>com.web.cal</groupId>
   <artifactId>WebAppCal</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>WebAppCal Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -21,6 +21,12 @@
     <version>2.5</version>
 </dependency>
   </dependencies>
+  <distributionManagement>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://34.93.255.232:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
   <build>
     <finalName>WebAppCal</finalName>
   </build>
